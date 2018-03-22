@@ -7,8 +7,8 @@ package bestgameever;
 
 /**
  *
- * @author roman
+ * @author Usuario
  */
-public class Consumable {
+public class Potion {
     
 }

@@ -5,29 +5,31 @@
  */
 package bestgameever;
 
+
 import java.util.ArrayList;
 
 /**
  *
- * @author roman
+ * @author José
  */
 public class Inventory {
     private ArrayList<Item> items;
-   
-    public Inventory() {
+    
+    public Inventory() { 
         items = new ArrayList<>();
     }
     
-    public void addItem( Item a ){
-        items.add( a );
-    }
-
-    void printItems() {
-        int n = 1;
-        for( Item i : items ){
-            System.out.println( "Item:" + n++ );
-            System.out.println(i + "\n");
-        }
+    public void addItem(Item x){
+        items.add(x);
     }
     
-}
+    public void showInventory(){
+            int n = 1;
+            for( Item i : items ){
+                System.out.println( "Item:" + n++ );
+                System.out.println( i + "\n"); // This is the reason we use @override command in items class.
+            }
+    }
+    
+ }
+

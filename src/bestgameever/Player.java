@@ -2,26 +2,31 @@ package bestgameever;
 
 import java.util.ArrayList;
 
+
+/**
+ *
+ * @author Jose
+ */
+
 public class Player {
     private Inventory inventory;
     
     public Player(){
         inventory = new Inventory();
-        
     }
     
-    
-    public void addItem( Item a ){
-        inventory.addItem( a );
+    public void addItem( Item adamantChestArmor ){
+        inventory.addItem( adamantChestArmor );
     }
 
-    void printItems() {
-        inventory.printItems();
+    public void showInventory() {
+        inventory.showInventory();
     }
     
     public Inventory getInventory(){
         return inventory;
     }
+    
     
     
 }
